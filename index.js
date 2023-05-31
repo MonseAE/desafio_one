@@ -71,9 +71,34 @@ function copiarTexto(){
 
 }
 
+
 function desencriptarTexto(){
+    
     let textoEncriptar = document.getElementById("texto-encriptar");
     let texto = textoEncriptar.value;
 
+    let ocultarImagen = document.getElementById("imagenNino");
+    let ocultarTexto = document.getElementById("textoOculto");
+    ocultarImagen.style.display = "none";
+    ocultarTexto.style.display = "none";
+
+    let mostrarTexto = document.getElementById("mostrarCaja");
+    mostrarTexto.style.display = "block";
+
+    let mostrarCopiar = document.getElementById("botonMostrar");
+    mostrarCopiar.style.display = "block";
+
     
+
+    let matrizCodigo =[["e", "enter"],["i", "imes"],["a", "ai"],["o", "ober"],["u", "ufat"]];
+
+    for(i=0; i < matrizCodigo.length; i++){
+        if(texto.includes(matrizCodigo[i][1])){
+            texto = texto.replaceAll(matrizCodigo[i][1],matrizCodigo[i][0]);
+        }
+    }
+    mostrarTexto.value = texto;
+
+    
+   
 }
