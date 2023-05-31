@@ -22,31 +22,31 @@
           <div class="uno">
             <div class="caja-texto">
               
-              <textarea cols="40" rows="14" placeholder="Ingrese el texto aqui"></textarea>
+              <textarea id="texto-encriptar" cols="40" rows="14" placeholder="Ingrese el texto aqui"></textarea>
             </div>
             <div class="leyenda">Solo letras minúsculas y sin acentos</div>
             <div class="boton-encriptador">
-              <button type="button">Encriptar</button>
+              <button id="htmlBotonEncriptar" type="button">Encriptar</button>
             </div>
             <div class="boton-desencriptador">
-              <button type="button">Desencriptar</button>
+              <button id="htmlBotonDesencriptar" type="button">Desencriptar</button>
             </div>
           </div>  
 
           <div class="dos">
             <div class="caja-desencriptado">
                 <div>
-                  <textarea cols="25" rows="24"></textarea>
+                  <textarea id="mostrarCaja" cols="25" rows="24"></textarea>
                 </div>
-                <div class="iamgen">
+                <div id="imagenNino" class="iamgen">
                   <img src="Muneco.png">
                 </div>
-                <div class="texto">
+                <div id="textoOculto" class="texto">
                   <div class="texto1">Ningún mensaje fue encontrado</div>
                   <div class="texto2">Ingrese el texto que desees encriptar o desencriptar</div>
                 </div>
-                <div class="boton-copiar">
-                  <button type="button">Copiar</button>
+                <div id="botonMostrar" class="boton-copiar">
+                  <button id="htmlBotonCopiar" type="button">Copiar</button>
                 </div>
             </div>
             
@@ -58,4 +58,5 @@
         </footer>
         
     </body>
+    <script src="index.js"></script>
 </html>
